@@ -30,8 +30,8 @@ class Login extends Component {
     return (
       <View style={styles.container}>
         <TextInput
-          placeholder="请求输入"
-          placeholderTextColor="#000"
+          placeholder="请输入信息"
+          placeholderTextColor="#8A8A99"
           underlineColorAndroid="transparent"
           style={styles.input}
           onChangeText={this.onChangeText} />
@@ -72,18 +72,22 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: '#222231',
+   
   },
   txt_login: {
-    fontSize: 14,
+    fontSize: 18,
+    color: '#FFFFFF',
   },
   input: {
     paddingLeft: 10,
     paddingRight: 10,
     height: 50,
-    width: 260,
-    borderWidth: 1,
-    borderColor: '#d4d4d4',
-    borderRadius: 8,
+    width: 240,
+    fontSize: 14,
+    color: "#222231",
+    borderBottomColor: '#E1E2E6',
+    borderBottomWidth: 1,
+    marginBottom: 20,
   }
 });
